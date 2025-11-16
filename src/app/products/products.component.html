@@ -1,0 +1,9 @@
+<div class="container mt-4">
+  <h3 class="mb-4">Products</h3> <!-- Changed from "Welcome to Online Store" to just "Products" to match desired output -->
+  <div class="row">
+    <!-- Apply Bootstrap column classes directly to the container of each product card -->
+    <div class="col-md-3 col-sm-6 mb-4" *ngFor="let product of products">
+      <app-product-details [product]="product"></app-product-details>
+    </div>
+  </div>
+</div>
